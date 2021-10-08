@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>선택자 조합</title>
+    <style>
+       h1{
+           color: aqua;
+       } 
+       .error{
+           background-color: wheat;
+       }
+       h1.error{
+           text-decoration: line-through;
+       }
+       h1.note{
+           font-size: 50px;
+        }  
+       h1.note.error{
+        font-style: italic;
+       }
+       p.error{
+           font-family: D2coding;
+       }
+       .error.note{
+           border-style: solid;
+       }
+       #para1{
+           text-align: right;
+       }
+       p#para1{
+           border-style: dotted;
+       }
+    </style>
+</head>
+<body>
+
+<h1 class="note">Lorem, ipsum dolor.</h1>
+<p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis impedit, placeat iusto consequuntur ipsam cupiditate quidem qui doloremque totam quia, nobis iure nemo, modi eius pariatur dignissimos. A, nihil beatae?</p>
+<h1 class="error note">Laborum, repudiandae aliquid.</h1>
+<p>Repellendus qui cumque reprehenderit, laboriosam debitis praesentium dolore quis beatae molestiae eum dicta totam unde quibusdam optio vel amet eveniet, id labore expedita sint impedit nobis error a. Deleniti, labore.</p>
+<h1 class="error">Unde, quos fuga?</h1>
+<p class="error">Voluptas enim amet deleniti in rem accusantium itaque corrupti, fugiat, reiciendis doloremque maxime, neque officiis soluta consectetur. Obcaecati molestiae, aperiam veniam, a dolorem adipisci iusto aliquam porro, provident repellat officiis.</p>
+</body>
+</html>
