@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hover</title>
+    <style>
+        div{
+            box-sizing: border-box;
+            background-color: ivory;
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+        } /* 위는 element가 하나고, 아래는 element+class라 아래 것들이 더 우선 */
+        div:hover{
+            border: 5px solid yellow;
+            background-color: black;
+            color: wheat;
+        }
+        div:active{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+<div>Lorem.</div>
+<div>Optio!</div>
+<div>Autem.</div>
+<div>Molestias?</div>
+<div>Porro.</div>
+<div>Labore.</div>
+</body>
+</html>

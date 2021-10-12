@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>child selector</title>
+    <style>
+        p{
+            color: blue;
+        }
+        div > p { /* p 요수 중 div  요소의 자식만 여기선 2가지!*/
+            text-decoration:underline;
+        }
+        body > p {
+            font-size: 32px;
+        }
+        #div1 > p {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere sapiente labore libero doloremque tenetur molestias temporibus voluptas nesciunt omnis vitae itaque accusamus commodi, quo id, doloribus quasi nobis eaque soluta!</p>
+    </div>
+    <div id="div2">
+        <p>Odit voluptas doloremque fugit vero, obcaecati illum consequatur voluptate eos quisquam nemo odio dolorem delectus voluptatum molestias tempora eaque sequi deleniti aperiam debitis quas harum dolor magnam? Aliquam, eligendi hic.</p>
+    </div>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore error! Itaque voluptatem nesciunt distinctio commodi consectetur ex iure eos voluptatibus, eum quia est maxime, at explicabo. Nam, dolore voluptas.</p>
+<p>Pariatur ipsum at, fuga dolorem tenetur eos officia asperiores fugiat accusamus sit eaque mollitia reprehenderit ab placeat aperiam amet. Omnis, quod? Cumque iure veritatis eveniet neque iste quasi mollitia pariatur?</p>
+</body>
+</html>

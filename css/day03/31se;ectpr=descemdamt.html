@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>descendatn selector</title>
+    <style>
+        div p{ 
+            /* div를 조상으로하는 p */
+            color:blue;
+        }
+        body p{
+            /* p엘레멘트가 body의 자식이어도되고, 증손주여도 되고 */
+
+            text-decoration: underline;
+        }
+        body > p{
+            /* 이건 바로 body아래에 있는 p만 해당 */
+            font-size: 32px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <p>
+        <lorem66p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae dolor optio deserunt porro eum necessitatibus doloribus, error perferendis enim, molestias odit cumque a doloremque repudiandae nam debitis autem mollitia dolorem.</lorem66p>
+        <lorem66p>Officiis cum ut voluptatibus iste nam aliquid, laboriosam dolorum illum culpa ratione eum distinctio architecto facilis suscipit et dolores delectus, quasi alias. Fugiat cumque alias non eos maxime explicabo officia!</lorem66p>
+    </p>
+</div>
+    <p>
+        <lorem66p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magnam est error quo accusantium rem facere aliquid dolor id natus. Architecto eaque corrupti earum alias eveniet dolore odio, minima exercitationem.</lorem66p>
+        <lorem66p>Soluta, dolor facilis! Officia molestiae facere eligendi voluptatibus, corporis iusto adipisci libero distinctio, fugit debitis sint quasi qui! Voluptates, maxime hic nemo veniam dolor debitis soluta odit minima amet facilis?</lorem66p>
+    </p>
+</body>
+</html>
