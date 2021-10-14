@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../icon/css/all.css">
+    <title>javascript</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<button><i style="font-size: 50px;"; class="far fa-thumbs-up"></i><span>0</span></button>
+<script>
+    document.querySelector("i").onclick=function(){
+        let cnt = document.querySelector("span").innerHTML;
+        cnt=parseInt(cnt)+1;
+
+        document.querySelector("span").innerHTML=cnt;
+    }
+
+</script>
+
+</body>
+</html>
