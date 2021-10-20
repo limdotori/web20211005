@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- button{가위 바위 보} -->
+    <!-- <button onclick="rps();">가위 바위 보</button> -->
+
+    <!-- button[onclick]*3 -->
+    <button onclick="rps(0);">가위</button>
+    <button onclick="rps(1);">바위</button>
+    <button onclick="rps(2);">보</button>
+
+    <!-- div>span>i.fas -->
+    <div>
+        <span>
+            <i class="fas"></i>
+        </span>
+    </div>
+
+    <div><h1>경기 결과</h1></div>
+    <div class="result">
+        <div>이김
+            <span id="win">0</span>
+        </div>
+        <div>짐
+            <span id="lose">0</span>
+        </div>
+        <div>비김
+            <span id="tie">0</span>
+        </div>
+    </div>
+
+<script>
+    function increase(selector) {
+        let elem = document.querySelector(selector);
+        let n = Number(elem.innerHTML);
+        elem.innerHTML = n + 1;
+    }
+    function rps(user) {
+        let r = Math.random();
+        // console.log(r);
+        r = parseInt(r * 3);
+        // console.log(r);
+
+        // user와 r이 같으면 비김
+        let result;
+        if (user == r) {
+            result = "비겼습니다";
+            increase("#tie");
+        } else if ((user + 2) % 3 == r) {
+            result = "이겼습니다";
+            increase("#win");
+        } else {
+            result = "졌습니다";
+            increase("#lose");
+        }
+        
+        //h1 요소에 set
+        document.querySelector("h1").innerHTML = result;
+
+        let icon = document.querySelector("i");
+        icon.classList.remove("fa-hand-rock", "fa-hand-paper", "fa-hand-scissors");
+        if (r == 0) {
+            // console.log("가위");
+            icon.classList.add("fa-hand-scissors");
+        } else if (r == 1) {
+            // console.log("바위");    
+            icon.classList.add("fa-hand-rock");
+        } else {
+            // console.log("보");
+            icon.classList.add("fa-hand-paper");
+        }
+    }
+</script>
+</body>
+</html>

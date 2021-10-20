@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../icon/css/all.css">
+    <title>for</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <button onclick="change();">바꾸기</button>
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Dignissimos.
+    </h1>
+    <h1>
+        Adipisci.
+    </h1>
+    <h1>
+        Temporibus?
+    </h1>
+    <h1>
+        Architecto.
+    </h1>
+    <script>
+        let index = 0;
+        function change() {
+            let val = document.querySelector("#input1").value;
+
+            document.querySelectorAll("h1")[index].innerHTML = val;
+
+            index++;
+            index = index % 5; 
+            // index%5
+
+        }
+
+    </script>
+</body>
+
+</html>
